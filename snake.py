@@ -51,8 +51,12 @@ def move():
         snake.pop(0)
 
     clear()
-    random_color = random.choice["green", "blue", "pink", "black", "yellow"]
+    ##lista con colores para eleccion al azar
+    lista_colores1= ["green", "blue", "pink", "black", "yellow"]
+    ##funcion para eleccion de colores
+    random_color = random.choice(lista_colores1)
     for body in snake:
+        ###lugar donde se hace el cambio de colores
         square(body.x, body.y, 9, random_color)
 
     square(food.x, food.y, 9, 'blue')
