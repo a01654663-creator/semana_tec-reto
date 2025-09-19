@@ -43,6 +43,7 @@ def move():
 
     if head == food:
         print('Snake:', len(snake))
+        ### Rango de movimiento de la comida despues de ser consumida
         food.x = randrange(-1, 1) * 10
         food.y = randrange(-1, 1) * 10
     else:
@@ -51,9 +52,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, 'red')
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, 'blue')
     update()
     ontimer(move, 100)
 
