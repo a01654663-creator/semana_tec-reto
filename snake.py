@@ -11,7 +11,6 @@ import random
 ### libreria de valores random para cambio de color de la serpiente y la comida
 from random import randrange
 from turtle import *
-
 from freegames import square, vector
 
 food = vector(0, 0)
