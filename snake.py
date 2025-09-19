@@ -18,8 +18,13 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 lista_colores1= ["green", "blue", "pink", "black", "yellow"]
-##funcion para eleccion de colores
-random_color = random.choice(lista_colores1)
+##colores para vibora
+lista_colores2= ["purple", "orange", "gold", "mistyrose", "chocolate"]
+##colores para comida
+##funcion para eleccion de colores vibora
+random_color_snake = random.choice(lista_colores1)
+##funcion para eleccion de colores comida
+random_color_food = random.choice(lista_colores2)
 def change(x, y):
     """Change snake direction."""
     aim.x = x
@@ -56,9 +61,9 @@ def move():
 
     for body in snake:
         ###lugar donde se hace el cambio de colores
-        square(body.x, body.y, 9, random_color)
+        square(body.x, body.y, 9, random_color_snake)
 
-    square(food.x, food.y, 9, 'blue')
+    square(food.x, food.y, 9, random_color_food)
     update()
     ontimer(move, 100)
 
