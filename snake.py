@@ -17,7 +17,7 @@ from freegames import square, vector
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
-lista_colores1= ["green", "blue", "pink", "black", "yellow"]
+lista_colores1= ["green", "blue", "pink", "slategray", "yellow"]
 ##colores para vibora
 lista_colores2= ["purple", "navy", "gold", "darkslategrey", "chocolate"]
 ##colores para comida
