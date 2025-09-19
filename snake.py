@@ -17,8 +17,9 @@ from freegames import square, vector
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
-
-
+lista_colores1= ["green", "blue", "pink", "black", "yellow"]
+##funcion para eleccion de colores
+random_color = random.choice(lista_colores1)
 def change(x, y):
     """Change snake direction."""
     aim.x = x
@@ -52,9 +53,7 @@ def move():
 
     clear()
     ##lista con colores para eleccion al azar
-    lista_colores1= ["green", "blue", "pink", "black", "yellow"]
-    ##funcion para eleccion de colores
-    random_color = random.choice(lista_colores1)
+
     for body in snake:
         ###lugar donde se hace el cambio de colores
         square(body.x, body.y, 9, random_color)
