@@ -51,9 +51,9 @@ def move():
         snake.pop(0)
 
     clear()
-
+    random_color = random.choice["green", "blue", "pink", "black", "yellow"]
     for body in snake:
-        square(body.x, body.y, 9, random.choice("green", "blue", "pink", "black", "yellow"))
+        square(body.x, body.y, 9, random_color)
 
     square(food.x, food.y, 9, 'blue')
     update()
