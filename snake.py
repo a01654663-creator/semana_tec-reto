@@ -7,7 +7,8 @@ Exercises
 3. How would you move the food?
 4. Change the snake to respond to mouse clicks.
 """
-
+import random 
+### libreria de valores random para cambio de color de la serpiente y la comida
 from random import randrange
 from turtle import *
 
@@ -52,7 +53,7 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'red')
+        square(body.x, body.y, 9, random.choice("green", "blue", "pink", "black", "yellow"))
 
     square(food.x, food.y, 9, 'blue')
     update()
