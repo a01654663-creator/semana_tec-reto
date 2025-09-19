@@ -19,7 +19,7 @@ snake = [vector(10, 0)]
 aim = vector(0, -10)
 lista_colores1= ["green", "blue", "pink", "black", "yellow"]
 ##colores para vibora
-lista_colores2= ["purple", "orange", "gold", "mistyrose", "chocolate"]
+lista_colores2= ["purple", "orange", "gold", "olive", "chocolate"]
 ##colores para comida
 ##funcion para eleccion de colores vibora
 random_color_snake = random.choice(lista_colores1)
